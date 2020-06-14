@@ -113,17 +113,16 @@ long LinuxParser::UpTime() {
   return uptime;
 }
 
-// TODO: Read and return the number of jiffies for the system
+// not implemented as not needed. also insrtruction on Jiffies were note clear
 long LinuxParser::Jiffies() { return 0; }
 
-// TODO: Read and return the number of active jiffies for a PID
-// REMOVE: [[maybe_unused]] once you define the function
+// not implemented as not needed. also insrtruction on Jiffies were note clear
 long LinuxParser::ActiveJiffies(int pid[[maybe_unused]]) { return 0; }
 
-// TODO: Read and return the number of active jiffies for the system
+// not implemented as not needed. also insrtruction on Jiffies were note clear
 long LinuxParser::ActiveJiffies() { return 0; }
 
-// TODO: Read and return the number of idle jiffies for the system
+// not implemented as not needed. also insrtruction on Jiffies were note clear
 long LinuxParser::IdleJiffies() { return 0; }
 
 // MK added function
@@ -142,7 +141,7 @@ vector<string> LinuxParser::Utilization(){
       }
     }
   }
-  // this will not happen: if no match -> return empty
+  // this will not happen: however, if no match -> return empty
   return vector<string>{};
 }
 
@@ -270,7 +269,7 @@ string LinuxParser::User(int pid) {
       }
     }
   }
-  // this will not happen: if no match -> return empty
+  // this will not happen: however, if no match -> return empty
   return string();
 }
 
